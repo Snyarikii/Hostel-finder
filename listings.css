@@ -1,0 +1,197 @@
+.logo span{
+    font-family: var(--heading-font);
+    color: var(--logo-colour);
+    font-weight: 700;
+    padding: 10px 10px 10px 10px;
+    margin-left: 0px;
+    font-size: 27px;
+    line-height: 26px;
+}
+
+.navbar{
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background-color: var(--white-smoke);
+}
+.page-links{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links a{
+    font-family: var(--text-font);
+    font-size: large;
+    text-decoration: none;
+    color: var(--links-colour);
+    margin: 20px;
+    padding: 5px 5px 5px 5px;
+}
+.nav-links a:hover{
+    color: var(--hover-colour);
+}
+.button-reserve button {
+    background-color: var(--transparent);
+    color: var(--background-colour);
+    border-color: var(--button-colour);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-family: var(--text-font);  
+    margin: 20px;    
+}
+.button-reserve button:hover{
+    color: var(--button-hover);
+    border-color: var(--hover-colour);
+}
+.side-nav{
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+.center-listings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    background-color: var(--white-smoke);
+}
+.search-form{
+    display: flex;
+    background-color: var(--white-smoke);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 10px;
+    border-color: var(--background-colour);
+    box-shadow: var(--box-shadow);
+    margin: 20px;
+
+}
+.text-above{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+.text-above:hover{
+    transform: scale(1.05);
+}
+.s{
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--transparent);
+}
+.s:focus{
+    outline: none;
+}
+#select{
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--transparent);
+}
+.option{
+    background-color: var(--light-purple);
+}
+#select:hover{
+    cursor: pointer;
+}
+#select:focus{
+    outline: none;
+}
+.select-placeholder{
+    color: whitesmoke;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.full-list{
+    background-color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.organisations{
+    background-color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.individual-owners{
+    background-color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-group-cards{
+    background-color: var(--white-smoke);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.image-card{
+    background-color: var(--white-smoke);
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.image-card img{
+    width: 100%;
+}
+.non-orgnisations{
+    background-color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    font-family: var(--heading-font);
+}
+footer{
+    display: flex;
+    background-color: var(--white-smoke);
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--links-colour);
+}
+footer p{
+    
+    font-size: 15px;
+    color: var(--background-colour);
+}

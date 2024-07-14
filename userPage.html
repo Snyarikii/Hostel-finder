@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Tinkercad Clone</title>
+    <link rel="stylesheet" href="tinker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">StudentHut</a>
+        </div>
+        <div class="accessibility">
+            <a href="#">Logout</a>
+        </div>
+        <div class="Search">
+             <span class="material-symbols-outlined">search</span>
+             <input class="search-input" type="search" placeholder="Search for property">
+        </div>
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    </header>
+    <div class="container">
+        <aside id="sidebar">
+            <!--<div class="user-profile">   
+                <img src="C:\Users\nyari\Downloads\ppPlaceholder.png" alt="User Profile Picture">
+                <label for="input-file">Choose image</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                <span>Username</span>
+            </div>-->
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+                    <li><a href="#" onclick="showSection('designs')">Booked Properties</a></li>
+                    <li><a href="#" onclick="showSection('create-new-design')">Lease information</a></li>
+                    <li><a href="#">Landlords</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <section id="dashboard" class="content-section active">
+                <form>
+                    
+                </form>
+                <h1>Welcome, Username</h1>
+                <p>Your recent searches:</p>
+                <div class="designs">
+                    <div class="design-card">
+                        <img src="C:\Users\nyari\Downloads\hostel 5.avif" alt="Design Thumbnail">
+                    </div>
+                    <div class="design-card">
+                        <img src="C:\Users\nyari\Downloads\hostel 3.webp" alt="Design Thumbnail">
+                    </div>
+                </div>
+            </section>
+            <section id="designs" class="content-section" style="display: none;">
+                <h1>Properties Booked</h1>
+                <p>Here are your booked properties.</p>
+            </section>
+            <section id="create-new-design" class="content-section" style="display: none;">
+                <h1>Create New Design</h1>
+                <p>Start creating a new design.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 StudentHut. All rights reserved.</p>
+    </footer>
+    <script src="tinkerc.js"></script>
+</body>
+</html>

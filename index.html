@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <header class ="header">
+        <nav class = "navbar" id="nav">
+            <div class = "logo">
+                <span>StudentHUT</span>
+            </div>
+            <div class = "page-links">                
+                <div class = "nav-links">
+                    <a class= "log-in" href = "#top-hostels">Our Top Hostels</a>
+                </div>
+                <div class = "nav-links">
+                    <a class= "log-in" href = "#fc">Facilities</a>
+                </div>                
+                <div class = "nav-links">
+                    <a class= "about-us" href = "#">About Us</a>
+                </div>
+                <div class = "nav-links">
+                    <a class= "reviews" href = "reviews.html">Reviews</a>
+                </div>
+                <div class = "nav-links">
+                    <a class= "Logout" onclick="confirmLogout()">Log out</a>
+                </div>
+            </div>
+            <div class="button-reserve">
+                <button type="button" onclick="Reserve()">Reserve</button>
+            </div>
+            
+        </nav>
+    </header>
+    <hr></hr>
+    <main>
+        <section class="hostel-section">
+            <div class="hostel-heading">
+                <h1>Hostel Types</h1>
+                <span><p>Here are some of the hostel types featured</p></span>
+            </div>
+            <br>
+            <section class="hostel-types">
+                <div class="hostel">
+                    <img src="Pictures\front-view-young-friends-hostel.jpg" alt="Picture" >
+                    <div><p>Bedsitter</p></div>
+                </div>
+                <div class="hostel">
+                    <img src="Pictures\front-view-young-friends-hostel.jpg" alt="Picture" >
+                    <div><p>Single room</p></div>
+                </div>
+                <div class="hostel">
+                    <img src="Pictures\front-view-young-friends-hostel.jpg" alt="Picture" >
+                    <div><p>One bedroom</p></div>
+                </div>
+                <div class="hostel">
+                    <img src="Pictures\front-view-young-friends-hostel.jpg" alt="Picture" >
+                    <div><p>Twin room</p></div>
+                </div>
+                <div class="hostel">
+                    <img src="Pictures\front-view-young-friends-hostel.jpg" alt="Picture" >
+                    <div><p>Premium room</p></div>
+                </div>
+                <div class="hostel">
+                    <img src="Pictures\front-view-young-friends-hostel.jpg" alt="Picture" >
+                    <div><p>Quad room</p></div>
+                </div>
+            </section>
+        </section>
+        <section class="facilities-section" id="fc">
+            <div class="inner-extra-section">
+                <div class="facilities-heading">
+                    <h1>Facilities</h1>
+                    <span> 
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, magnam dolore accusamus reiciendis dolorum esse ipsum veritatis expedita magni labore cumque culpa delectus ab voluptas quibusdam molestias totam error? Deleniti?</p>
+                    </span>
+                </div>
+                <section class="facilities">
+                    <div class="facility">
+                        <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                        <div><p>Laundry Services</p></div>
+                    </div>
+                    <div class="facility">
+                        <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                        <div><p>Study rooms</p></div>
+                    </div>
+                    <div class="facility">
+                        <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                        <div><p>Cafeteria</p></div>
+                    </div>
+                    <div class="facility">
+                        <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                        <div><p>Hang out spots</p></div>
+                    </div>
+                </section>
+            </div>
+            <section class="extra-facilities">
+                <div class="facility">
+                    <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                    <div><p>Gym</p></div>
+                </div>
+                <div class="facility">
+                    <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                    <div><p>Chilling Area</p></div>
+                </div>
+                <div class="facility">
+                    <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                    <div><p>Restaurant</p></div>
+                </div>
+                <div class="facility">
+                    <img src="Pictures\pool-table-image.jpg" alt="Picture" >
+                    <div><p>House Equipment</p></div>
+                </div>
+            </section>
+        </section>
+        <section class="trending-section" id="top-hostels">
+            <div class="trending-heading">
+                <h1>Our Top Hostels <span class="smile">&#9786;</span></h1>
+                <span><p>These are our highest rated hostels by other users</p></span>
+                <span><p class="stars">&#9733; &#9733; &#9733; &#9733; &#9733;</p></span>
+            </div>
+            <section class="trending-hostels">
+                <div class="t-hostels">
+                    <img src="Pictures\hostel-image.png" alt="Picture" >
+                    <div>
+                        <p>Qwetu Apartments</p>
+                        <p class="p">Starting from Ksh 15,000</p>
+                        <p class="p">Location</p>
+                    </div>
+                </div>
+                <div class="t-hostels">
+                    <img src="Pictures\hostel-image.png" alt="Picture" >
+                    <div>
+                        <p>Parallel Four</p>
+                        <p class="p">Starting from Ksh 15,000</p>
+                        <p class="p">Location</p>
+                    </div>
+                </div>
+                <div class="t-hostels">
+                    <img src="Pictures\hostel-image.png" alt="Picture" >
+                    <div>
+                        <p>Defoca</p>
+                        <p class="p">Starting from Ksh 15,000</p>
+                        <p class="p">Location</p>
+                    </div>
+                </div>
+                <div class="t-hostels">
+                    <img src="Pictures\hostel-image.png" alt="Picture" >
+                    <div>
+                        <p>Siwaka estate</p>
+                        <p class="p">Starting from Ksh 15,000</p>
+                        <p class="p">Location</p>
+                    </div>
+                </div>
+                <div class="t-hostels">
+                    <img src="Pictures\hostel-image.png" alt="Picture" >
+                    <div>
+                        <p>Akila</p>
+                        <p class="p">Starting from Ksh 15,000</p>
+                        <p class="p">Location</p>
+                    </div>
+                </div>
+                <div class="t-hostels">
+                    <img src="Pictures\hostel-image.png" alt="Picture" >
+                    <div>
+                        <p>Highrise</p>
+                        <p class="p">Starting from Ksh 15,000</p>
+                        <p class="p">Location</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <hr></hr>
+    <footer>
+        <div class="footer">
+            <div><p>&copy; 2024 StudentHUT, Inc. All rights reserved</p></div>
+            <div><a href="#nav">Get to the top of the website</a></div>
+        </div>
+    </footer>
+    <script src="StudentHut.js"></script>
+</body>
+</html>

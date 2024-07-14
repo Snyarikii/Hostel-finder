@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+.toggle-btn {
+    background-color: transparent;
+    border:none;
+    color:#1b1a1a;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: 250px;
+    top: 50%;
+    transform: translateY(-100%,-50%);
+    transition:left 0.3s ease;
+    z-index:1;
+}
+header .Search{
+    --padding:14px;
+
+    width:max-content;
+    display:flex;
+    align-items:center;
+    padding:var(--padding);
+    border-radius:28px;
+    background: #f6f6f69c;
+    color: #181818;
+}
+.search-input{
+    font-size:16px;
+    font-family:'lexend',sans-serif;
+    color:#333333;
+    margin-left:var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width:300px;
+    
+}
+.search-input::placeholder{
+    color:rgba(0, 0, 0, 0.466);
+}
+.search-icon{
+    color:rgba(0,0,0,1);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#16161693;/* #ffae00ab;*/
+    color: #fff;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #d16a03;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+header .accessibility a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+aside {/*left sidebar*/
+    width: 250px;
+    background-color:#16161693;/* #ffae00ab;*/
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    min-height: calc(100vh - 40px); /* Full height minus header and footer */
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+aside.hidden {
+    transform: translateX(-250px);
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+
+.user-profile img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile span {
+    font-weight: bold;
+}
+.user-profile img{
+    width:120px;
+    height: 120px;
+    border-radius:50%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.user-profile label{
+    display:block;
+    width:80px;
+    background:#535353;
+    font-size: 10px;
+    color:#fff;
+    padding:5px;
+    margin:5px auto;
+    border-radius:5px;
+    cursor:pointer;
+}
+.user-profile input{
+    display:none;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside nav ul li {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+aside nav ul li a:hover {
+    background-color: #828384c1;
+}
+aside nav ul li a:focus {
+    border:2px solid #e88c01d3;
+    border-radius:20px;
+}
+
+main {
+    flex-grow: 1;
+    padding: 40px;
+    /*background-color: #ffffff;
+    background-image: url('C:\\Users\\nyari\\Downloads\\hostel 1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    position:relative;
+    color: #181818;
+    text-align:end;
+    /*transform: translateX(-250px);*/
+    font-size: 20px;
+    z-index: 0;
+
+}
+.content-section {
+    display: none;/* Initially hidden */
+}
+.content-section.active {
+    display: block;     
+}
+
+
+.designs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.design-card {
+    background-color: #16161693;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 300px;
+    height:200px;
+}
+.design-card img{
+    width:270px;
+    height:170px;
+    border-radius:6px;
+    padding:10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #fff;
+}
+/*-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+font: 200 18px/28px artifakt-element,sans-serif;
+list-style: none outside;
+font-family: artifakt-element,sans-serif;
+letter-spacing: 0;
+font-size: 16px;
+line-height: 24px;
+color: #282727;
+font-weight: 700;
+width: 75px;
+aspect-ratio: auto 75 / 75;
+height: 75px;
+box-sizing: border-box;
+border: 0;
+vertical-align: middle;
+border-radius: 100px;
+object-fit: cover;*/

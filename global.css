@@ -1,0 +1,36 @@
+html{
+    background-color: var(--white-smoke);
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+hr{
+    margin: 0px;
+}
+:root {
+    /*Theme Colours*/
+    --background-colour: rgb(0, 0, 0, 0.92);
+    --footer-colour: lightgrey;
+    --logo-colour: #bd6410;
+    --button-colour: #bd6410;
+    --text-colour: #fff;
+    --links-colour: #8353E2;
+    --hover-colour:#bd6410;
+    --button-hover: #d67d29;
+    --colour-gray: #424856;
+    --section-colour: white;
+    --facility-colour: lightgrey;
+    --black: black;
+    --white:white;
+    --white-smoke: whitesmoke;
+    --transparent: transparent;
+    --box-shadow:  0 0 10px 5px rgba(73, 43, 133, 0.15);
+    --light-purple: #8353e291;
+
+
+    /*Fonts*/
+    --heading-font: Epilogue;
+    --text-font: Inter;
+
+}
